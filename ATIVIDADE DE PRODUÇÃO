@@ -1,0 +1,65 @@
+/*Usuário GitHu: umbertosaccol*/
+/*Código para entraga de trabalho para a disciplina de Algoritmos, o usuário digita a opção e fara algumas operações*/
+
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main(void) {
+    int opcao;
+    float n1 = 0, n2 = 0;
+      printf("Autor:Umberto Saccol Brasil\n");
+      printf("Curso:TECNOLOGIA EM REDES DE COMPUTADORES\n");
+      printf("Universidade:La Salle\n");
+      printf("Matricula:202222192\n");
+      printf("\n");
+      printf("Digite a opção desejada:\n");
+      printf("1-SOMA\n");
+      printf("2-SUBTRAÇÃO\n");
+      printf("3-DIVISÃO\n");
+      printf("4-MULTIPLICAÇÃO\n");
+      printf("5-RAIZ QUADRADA\n");
+      printf("6-POTÊNCIA\n");
+      printf("7-SAIR\n");
+  printf("\n");
+  scanf("%d", &opcao);
+  if(opcao == 7){
+    printf("Até logo!");
+  }
+  else if(opcao != 5){
+    printf("Digite o primeiro número: ");
+    scanf("%f", &n1);
+    printf("Digite o segundo número: ");
+    scanf("%f", &n2);
+        }
+  if(opcao == 5){
+    printf("Digite o número: ");
+    scanf("%f", &n1);
+    }
+  switch(opcao){
+    case 1:
+      printf("O RESULTADO DA SOMA É: %.0f",n1 + n2);
+      break;
+    case 2:
+      printf("O RESULTADO DA SUBTRAÇÃO É: %.0f",n1 - n2);
+      break;
+    case 3:
+      printf("O RESULTADO DA DIVISÃO É: %.0f",n1 / n2);
+      break;
+    case 4:
+      printf("O RESULTADO DA MULTIPLICAÇÃO É: %.0f",n1 * n2);
+      break;
+    case 5:
+      printf("A RAIZA QUADRADA É: %.0f",sqrt(n1));
+      break;
+    case 6:
+      printf("O RESULTADO DA POTÊNCIA É: %.0f",pow(n1,n2));
+      break;
+    case 7:
+      break;
+    default:
+      printf("Opção inválida");
+  }
+
+  return 0;
+}
